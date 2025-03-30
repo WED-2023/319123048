@@ -76,3 +76,51 @@ p{
 	font-weight: normal;
 	font-size: 18px;
 }
+
+#my-photos {
+    text-align: center;
+    padding: 50px 0;
+    background: #f4f4f4; 
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.photo-gallery img {
+	width: 300px;
+	height: 300px; 
+	object-fit: cover; 
+	border-radius: 10px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.painting-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.painting-gallery img {
+	width: 300px;
+	height: 300px; 
+	object-fit: cover; 
+	border-radius: 10px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out;
+}
