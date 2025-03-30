@@ -47,6 +47,8 @@
 <h3>Quotes and Fun Facts</h3>
 <p>
   <h4>Quotes</h4>
+  "My painting carries with it the message of pain."
+  <br/>
   "I paint self-portraits because I am so often alone, because I am the person I know best."
   <br/>
   "There have been two great accidents in my life. One was the trolley, and the other was Diego. Diego was by far the worst."
@@ -64,7 +66,9 @@
     <br/>
     3.Frida Kahlo is a close friend of American artist Georgia O'Keeffe- Frida Kahlo writes a few letters to Georgia O'Keeffe - an artistic rock star nearly twice her age, whom she'd befriended while she living in New York.
     <br/>
-    4.She became famous a couple of decades after her death- She wrote before she died: "I hope the exit is joyful - and I hope never to return - Frida".
+    4.Wore skirts to hide leg deformities
+    <br/>
+    5.She became famous a couple of decades after her death- She wrote before she died: "I hope the exit is joyful - and I hope never to return - Frida".
   </p>
 </section>
 
@@ -114,25 +118,10 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 
 <section id="like" class="section">
 <br/>
+<h2>give me a like </h2>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+<span id="counter"> 0</span>
+<button id="like-button">Like 👍 </button>
 </section>
 
 <section id="qrcoder" class="section">
@@ -204,6 +193,11 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
+
+ document.getElementById("like-button").addEventListener("click", function() {
+    let counter = document.getElementById("counter");
+    counter.innerText = parseInt(counter.innerText) + 1;
+});
  </script>
 </body>
 </html>
