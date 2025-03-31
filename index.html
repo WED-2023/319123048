@@ -206,18 +206,20 @@
       $('#menu').toggle($(this).scrollTop() > 1000);
   });
   
-  // Ensure like button works
-  document.addEventListener("DOMContentLoaded", function() {
-      let likeButton = document.getElementById("like-button");
-      let likeCounter = document.getElementById("counter");
-  
-      let count = 0; // Initial like count
-  
-      likeButton.addEventListener("click", function() {
-          count++; // Increase count
-          likeCounter.textContent = count; // Update UI
-      });
-  });
+</script>
+
+<!--Script for Like button-->
+<script>
+
+const likeButton = document.getElementById("like-button");
+const counter = document.getElementById("counter");
+
+let likeCount = 0;
+
+likeButton.addEventListener("click", () => {
+    likeCount++;
+    counter.textContent = likeCount;
+});
   </script>
   
 </body>
