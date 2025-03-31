@@ -127,13 +127,13 @@ h2 {
 
 .video-container {
     display: flex;
-    justify-content: center; /* Centers the videos */
-    gap: 20px; /* Space between the videos */
-    flex-wrap: wrap; /* Makes it responsive */
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
 }
 
 .video-item {
-    text-align: center; /* Centers the title above each video */
+    text-align: center; 
 }
 
 #like {
@@ -176,7 +176,7 @@ h2 {
 #counter {
     font-size: 22px;
     font-weight: bold;
-    color: #5D4037; /* Brown for artistic contrast */
+    color: #5D4037; 
     margin-right: 10px;
 }
 
@@ -216,31 +216,71 @@ table {
 }
 
 th, td {
-    border: 1px solid #8B0000; /* Dark red border */
+    border: 1px solid #8B0000; 
     padding: 12px;
     text-align: center;
     font-size: 16px;
 }
 
 th {
-    background-color: #a80000; /* Deep red */
+    background-color: #a80000; 
     color: white;
     font-weight: bold;
     padding: 15px;
 }
 
 tr:nth-child(even) {
-    background-color: #f8d7da; /* Light red */
+    background-color: #f8d7da; 
 }
 
 tr:nth-child(odd) {
-    background-color: #fce4ec; /* Lighter pink */
+    background-color: #fce4ec; 
 }
 
 td:first-child {
     font-weight: bold;
-    background-color: #e6b0aa; /* Medium red for first column */
+    background-color: #e6b0aa; 
     color: black;
     text-align: left;
     padding-left: 15px;
 }
+
+input[type="name"], textarea {
+    width: 95%; 
+    padding: 10px; 
+    border-radius: 10px;
+    border: 2px solid #ccc; 
+    background-color: #f9f9f9; 
+    font-size: 16px; 
+	font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+}
+
+input[type="email"], textarea {
+    width: 95%; 
+    padding: 10px; 
+    border-radius: 10px;
+    border: 2px solid #ccc; 
+    background-color: #f9f9f9; 
+    font-size: 16px; 
+	font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+}
+
+
+button[type="submit"] {
+    padding: 12px 20px; 
+    font-size: 16px; 
+    background-color: #a80000; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+} 
+
+button[type="submit"]:hover {
+    background-color: #ff1b1b; 
+} 
