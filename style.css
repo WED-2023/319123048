@@ -64,9 +64,10 @@ nav ul li a:hover {
 
 .section {
     padding-top: 60px;
-    padding-left: 200px;   
-    max-width: 1200px;  
+    padding-left: 200px;
+ 
 }
+
 h3{
 	font-weight: bold;
 }
@@ -124,29 +125,42 @@ h2 {
     transition: transform 0.3s ease-in-out;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center; /* Centers the videos */
+    gap: 20px; /* Space between the videos */
+    flex-wrap: wrap; /* Makes it responsive */
+}
+
+.video-item {
+    text-align: center; /* Centers the title above each video */
+}
+
 #like {
+	scroll-margin-top: 80px;
+	padding-top: 150px;
 	margin-top: 20px;
 	margin-left: 50px;
 	margin-right: 20px;
-    background-color: #fdcfca; /* Soft pink for a subtle section highlight */
+    background-color: #fdcfca; 
     padding: 30px;
     border-radius: 10px; 
 	text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 #like h2 {
     font-weight: bold;
-    color: #8B0000; /* Dark red to match the nav */
+    color: #8B0000; 
     font-size: 24px;
 }
 
 #like-button {
-    background-color: #8B0000; /* Dark red to match nav */
+    background-color: #8B0000; 
     color: white;
     font-weight: bold;
     padding: 12px 24px;
-    border: 3px solid #5D4037; /* Brown border for contrast */
+    border: 3px solid #5D4037; 
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -155,8 +169,8 @@ h2 {
 }
 
 #like-button:hover {
-    background-color: #A52A2A; /* Warmer red on hover */
-    color: #FFE4E1; /* Light pink text to blend with section */
+    background-color: #A52A2A; 
+    color: #FFE4E1; 
 }
 
 #counter {
@@ -164,4 +178,69 @@ h2 {
     font-weight: bold;
     color: #5D4037; /* Brown for artistic contrast */
     margin-right: 10px;
+}
+
+#qrcoder{
+	text-align: center;
+	font-weight: bold;
+}
+
+#qrcoder img{
+	width: 300px;
+	height: 300px; 
+	object-fit: cover; 
+	border-radius: 10px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out;
+}
+#spa h3{
+	text-align: center;
+	font-weight: bold;
+	color: #402d27;
+
+}
+#spa h2{
+	text-align: center;
+	font-weight: bold;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 1px solid #8B0000; /* Dark red border */
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background-color: #a80000; /* Deep red */
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #f8d7da; /* Light red */
+}
+
+tr:nth-child(odd) {
+    background-color: #fce4ec; /* Lighter pink */
+}
+
+td:first-child {
+    font-weight: bold;
+    background-color: #e6b0aa; /* Medium red for first column */
+    color: black;
+    text-align: left;
+    padding-left: 15px;
 }
