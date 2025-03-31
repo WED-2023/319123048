@@ -284,3 +284,62 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #ff1b1b; 
 } 
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make images and videos responsive */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container for the main content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Flexbox for layout */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style adjustments for small screens */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    body {
+        font-size: 14px; /* Reduce font size for readability */
+    }
+    
+    .container {
+        width: 95%;
+    }
+}
+
+/* Further adjustments for very small screens (mobile phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
